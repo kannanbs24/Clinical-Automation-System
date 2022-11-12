@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'E:\CAS-master\CAS-master\CAS-DAL\ClinicalModel.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Clinical-Automation-System\CAS-DAL\ClinicalModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
