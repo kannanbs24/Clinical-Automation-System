@@ -109,7 +109,7 @@ namespace Clinical_Automation_System.Controllers
                 });
             }
             int res = userRepo.Add(user);
-            return RedirectToAction("Index");
+            return RedirectToAction("success1");
         }
 
 
@@ -139,7 +139,7 @@ namespace Clinical_Automation_System.Controllers
                 });
             }
             int res = userRepo.Add(user);
-            return RedirectToAction("Index");
+            return RedirectToAction("success2");
         }
 
 
@@ -150,6 +150,13 @@ namespace Clinical_Automation_System.Controllers
         {
             return View();
         }
-
+        public ActionResult Success1()
+        {
+            return View();
+        }
+        public ActionResult Success2()
+        {
+            return View();
+        }
     }
 }

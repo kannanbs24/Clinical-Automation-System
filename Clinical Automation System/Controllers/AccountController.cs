@@ -110,7 +110,7 @@ namespace Clinical_Automation_System.Controllers
                 return RedirectToRoute(new
                 {
                     controller = "account",
-                    action = "login",
+                    action = "WelcomePage",
                 });
             }
             Session["UserId"] = 0;
@@ -120,7 +120,7 @@ namespace Clinical_Automation_System.Controllers
             return RedirectToRoute(new
             {
                 controller = "account",
-                action = "login",
+                action = "WelcomePage",
             });
         }
 
