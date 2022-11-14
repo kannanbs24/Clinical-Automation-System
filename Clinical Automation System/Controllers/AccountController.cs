@@ -198,5 +198,80 @@ namespace Clinical_Automation_System.Controllers
                 }
             }
         }
+        [HttpGet]
+        public ActionResult ForgetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ForgetPassword(string inputEmail, string inputphone)
+        {
+            User user = userRepository.LoginUsingEmailAndPhone(inputEmail, inputphone);
+            if (user == null)
+            {
+                Session["Invalid"] = true;
+                return View();
+            }
+            else
+            {
+                Session["UserId"] = user.UserId;
+                Session["Name"] = user.Name;
+                Session["RoleId"] = user.RoleId;
+                //'Administrator'
+                if (user.RoleId == 1)
+                {
+                    return RedirectToRoute(new
+                    {
+                        controller = "Account",
+                        action = "EditUser",
+                    });
+                }
+                //'Doctor'
+                else if (user.RoleId == 2)
+                {
+                    return RedirectToRoute(new
+                    {
+                        controller = "Account",
+                        action = "EditUser",
+                    });
+                }
+                //'Patient'
+                else if (user.RoleId == 3)
+                {
+                    return RedirectToRoute(new
+                    {
+                        controller = "Account",
+                        action = "EditUser",
+                    });
+                }
+
+                //'Fontoffice'
+                else if (user.RoleId == 4)
+                {
+                    return RedirectToRoute(new
+                    {
+                        controller = "Account",
+                        action = "EditUser",
+                    });
+                }
+
+                //'Pharmacy'
+                else if (user.RoleId == 5)
+                {
+                    return RedirectToRoute(new
+                    {
+                        controller = "Account",
+                        action = "EditUser",
+                    });
+
+                }
+                else
+                {
+                    return View();
+                }
+            }
+        }
+
     }
 }

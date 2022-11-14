@@ -35,13 +35,13 @@
                         <label>Gender</label>
                         <div class="form-check">
                             <label class="form-check-label">
-                                @Html.RadioButtonFor(ud => ud.users.Gender, "Male", new { @class = "form-check-input" })
+                                @Html.RadioButtonFor(ud => ud.users.Gender, "Male", new { @class = "form-check-input",@checked="checked" })
                                 Male
                             </label>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                @Html.RadioButtonFor(ud => ud.users.Gender, "Female", new { @class = "form-check-input" })
+                                @Html.RadioButtonFor(ud => ud.users.Gender, "Female", new { @class = "form-check-input" ,@checked="checked" })
                                 Female
                             </label>
                         </div>

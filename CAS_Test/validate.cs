@@ -23,7 +23,7 @@ namespace CAS_Test
         {
             bool ans = false;
             var found = db.Users.ToList();
-            if (found[0].Email == "doctor@gmail.com" && found[0].Password == "123")
+            if (found[0].Email == "ram@gmail.com" && found[0].Password == "123")
             {
                 ans = true;
             }
@@ -33,7 +33,7 @@ namespace CAS_Test
         {
             bool ans = false;
             var found = db.Users.ToList();
-            if (found[0].Email == "frontofficer@gmail.com" && found[0].Password == "123")
+            if (found[0].Email == "deepak@gmail.com" && found[0].Password == "123")
             {
                 ans = true;
             }
@@ -43,7 +43,7 @@ namespace CAS_Test
         {
             bool ans = false;
             var found = db.Users.ToList();
-            if (found[0].Email == "pharmacist@gmail.com" && found[0].Password == "123")
+            if (found[0].Email == "gurus@gmail.com" && found[0].Password == "123")
             {
                 ans = true;
             }
@@ -53,7 +53,7 @@ namespace CAS_Test
         {
             bool ans = false;
             var found = db.Users.ToList();
-            if (found[0].Email == "patient@gmail.com" && found[0].Password == "123")
+            if (found[0].Email == "naren@gmail.com" && found[0].Password == "123")
             {
                 ans = true;
             }
